@@ -1,8 +1,16 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Route
+} from 'react-router-dom';
+
+import AuthPage from './pages/AuthPage';
 
 const App = () => {
   return (
-    <>aooo</>
+    <Router>
+      <Route path='/' exact component={AuthPage} />
+    </Router>
   )
 }
 
